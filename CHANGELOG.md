@@ -1,5 +1,7 @@
 # Changelog
 
-## Version 1.0 (November 19, 2015)
+## Version 1.0 (September 24, 2016)
 
-Initial release.
+- Strip out everything we're not using from Foundation
+- Clean up project and update Changelog
+- Create Initial Under Construction Page
