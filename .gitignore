@@ -2,4 +2,12 @@
 node_modules
 npm-debug.log
 bower_components
-dist
+src
+.babelrc
+.bowerrc
+bower.json
+CHANGELOG.md
+config.yml
+gulpfile.babel.js
+package.json
+readme.md
