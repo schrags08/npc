@@ -7,8 +7,8 @@ function initEasterEgg() {
 
     new Konami(function () {
         var status = !isEggEnabled ? 'e]\[@bl3D' : 'diZ481Ed';
-        $('body').toggleClass('npc--dosMode');
-        console.log(`H4x0r Le3t ]\/[0D3 ${status}...`);
+        $('body').toggleClass('npc--l33tMode');
+        console.log(`H4x0r l337 ]\/[0D3 ${status}...`);
         isEggEnabled = !isEggEnabled;
     });
 }

@@ -1,7 +1,7 @@
 @import 'util/util';
 @import 'ibm_vga8';
 
-body.#{$css-prefix}--dosMode {
+body.#{$css-prefix}--l33tMode {
     background-color: #000;
     
     * {
@@ -27,6 +27,7 @@ body.#{$css-prefix}--dosMode {
     }
 
     &__eventInfo {
+        // todo: replace these with SVGs so we can manipulate the color easily
         background: url("#{$image-path}/chalice.png") right center no-repeat;
         color: $theme-color04;
         padding-right: rem-calc(40);
