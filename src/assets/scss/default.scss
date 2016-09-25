@@ -1,0 +1,233 @@
+@import 'util/util';
+@import 'ibm_vga8';
+
+body.#{$css-prefix}--dosMode {
+    background-color: #000;
+    
+    * {
+        font-family: 'IBMVGA8';
+        color: #00ff00;
+    }
+}
+
+.#{$css-prefix} {
+    &__wrapper {
+        min-width: 320px;
+    }
+
+    &__header {
+        margin-top: 1rem;
+    }
+
+    &__brand {
+        @include breakpoint(small only) {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__eventInfo {
+        background: url("#{$image-path}/chalice.png") right center no-repeat;
+        color: $theme-color04;
+        padding-right: rem-calc(40);
+
+        @include breakpoint(small only) {
+            background: none;
+            padding-right: 0;
+        }
+    }
+
+    &__annual,
+    &__eventDate {
+        display: block;
+        text-align: right;
+        white-space: nowrap;
+
+        @include breakpoint(small only) {
+            text-align: center;
+        }
+    }
+    
+    &__annual {
+        font-size: rem-calc(16);
+        letter-spacing: rem-calc(-1);
+
+        @include breakpoint(large up) {
+            font-size: rem-calc(18);
+        }
+    }
+
+    &__eventDate {
+        font-size: rem-calc(32);
+        letter-spacing: rem-calc(-2);
+        text-transform: uppercase;
+
+        @include breakpoint(large up) {
+            font-size: rem-calc(34);
+        }
+    }  
+}
+
+// .nav-main {
+//     margin: 1rem 0;
+
+//     ul {
+//         background-color: $theme-color05;
+//         font-weight: bold;
+//         letter-spacing: rem-calc(-1);
+
+//         li {
+//             text-transform: uppercase;
+
+//             a {
+//                 color: $theme-color04;
+//                 line-height: rem-calc(40);
+//                 text-decoration: none;
+//                 padding: 0 1rem;
+
+//                 &:hover {
+//                     background-color: $theme-color04;
+//                     color: $theme-color05;
+//                 }
+//             }
+
+//             &.selected {
+//                 a {
+//                     color: #4a5455;
+
+//                     &:hover {
+//                         color: $theme-color05;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// li.ask-cheesy {
+//     background-color: $theme-color05;
+//     position: relative;
+
+//     .ask-cheesy-surprise {
+//         background: url("#{$image-path}/ask-cheesy-hover.png") no-repeat;
+//         bottom: 0;
+//         visibility: hidden;
+//         height: 75px;
+//         position: absolute;
+//         right: 31px;
+//         width: 43px;
+//         z-index: -1;
+//         transform: translate3d(0, 0, 0);
+//         transition: all 0.1s ease-in-out;
+//     }
+
+//     &.hover .ask-cheesy-surprise {
+//         visibility: visible;
+//         bottom: 35px;
+//     }
+// }
+
+// .main-gallery {
+//     $height-small: rem-calc(260);
+//     $height-medium-up: rem-calc(460);
+//     $flickity-prev-next-button-left-right: rem-calc(35);
+
+//     height: $height-small;
+//     margin-bottom: 1rem;
+
+//     .gallery-cell {
+//         img {
+//             display: block;
+//             height: $height-small;
+//             max-width: none;
+//             // vertical-align: baseline;
+//         }
+//     }
+
+//     @include breakpoint(medium up) {
+//         height: $height-medium-up;
+
+//         .gallery-cell {
+//             img {
+//                 height: $height-medium-up;
+//             }
+//         }
+//     }
+
+//     .flickity-prev-next-button {
+//         background: hsla(0, 0%, 100%, 0.25);
+
+//         &:hover {
+//             background: hsla(0, 0%, 100%, 0.55);
+//         }
+//     }
+
+//     .flickity-prev-next-button.previous {
+//         left: $flickity-prev-next-button-left-right;
+//     }
+
+//     .flickity-prev-next-button.next {
+//         right: $flickity-prev-next-button-left-right;
+//     }
+
+
+// }
+
+// .features {
+//     .feature {
+//         text-align: center;
+//     }
+
+//     h2,
+//     h3 {
+//         line-height: 1;
+//     }
+
+//     h2 {
+//         background-color: $theme-color05;
+//         color: $theme-color04;
+//         font-size: rem-calc(24);
+//         letter-spacing: rem-calc(-1);
+//         margin-bottom: 1rem;
+//         padding: 1rem;
+//         text-transform: uppercase;
+//     }
+
+//     h3 {
+//         color: $theme-color04;
+//         font-size: rem-calc(24);
+//         margin-bottom: rem-calc(10);
+//     }
+// }
+
+// .img-sidebar {
+//     text-align: right;
+// }
+
+// .bar {
+//     margin: 0 0 1rem;
+// }
+
+// .bar-header {
+//     padding-bottom: 1rem;
+// }
+
+// .bar-name {
+//     font-size: rem-calc(22);
+// }
+
+// .bar-timeslot {
+//     color: $theme-color03;
+//     display: block;
+//     font-size: rem-calc(14);
+//     line-height: rem-calc(22);
+//     text-align: right;
+
+//     @include breakpoint(small only) {
+//         text-align: left;
+//     }
+// }
+
+// .activities {
+//     font-weight: bold;
+// }

@@ -1,12 +1,6 @@
 {
     "siteName": "Neighborhood Pub Crawl",
-    "annual": "15",
-    "annualSuffix": "th",
-    "eventDay": "Saturday",
-    "eventMonth": "August",
-    "eventDate": "12",
-    "eventDateSuffix": "th",
-    "eventYear": "2017",
-    "eventTime": "2:00 PM",
-    "eventCountdownJs": "August 12, 2017 02:00:00"
+    "cssPrefix": "npc",
+    "eventDate": "August 12, 2017 02:00:00",
+    "firstEventDate": "August 1, 2003 02:00:00"
 }

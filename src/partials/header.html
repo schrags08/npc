@@ -1,0 +1,26 @@
+<header class="{{ global.cssPrefix }}__header">
+    <div class="row">
+        <div class="small-12 medium-6 columns">
+            <div class="{{ global.cssPrefix }}__brand">
+                <a href="{{ root }}/" title="Return to homepage">
+                    <img src="{{ root }}assets/img/logo.png" alt="{{ global.siteName }}" title="Return to homepage">
+                </a>
+            </div>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <div class="{{ global.cssPrefix }}__eventInfo">
+                <span class="{{ global.cssPrefix }}__annual">{{ annualizer global.firstEventDate global.eventDate }} Annual {{ global.siteName }}</span>
+                <span class="{{ global.cssPrefix }}__eventDate">{{ dateFormat global.eventDate 'MMMM Do, YYYY' }}</span>
+            </div>
+        </div>
+    </div>
+    <!--<div class="row">
+        <div class="small-12 columns">
+            <nav class="nav-main">
+                <ul class="vertical medium-horizontal menu">
+                    {{> nav-items }}
+                </ul>
+            </nav>
+        </div>
+    </div>-->
+</header>

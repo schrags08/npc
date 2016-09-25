@@ -1,0 +1,34 @@
+@import 'util/util';
+
+$font-lucida: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", LucidaGrande, Geneva, Arial, sans-serif;
+$font-georgia: Georgia, "New Century Schoolbook", Palatino, "Times New Roman", serif;
+$font-trebuchet: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+$font-calibri: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+$theme-color01: #D5FBFF; //harbor01 - light blue
+$theme-color02: #9FBCBF; //harbor02 - light slate blue
+$theme-color03: #647678; //harbor03 - light slate grey
+$theme-color04: #2F3738; //harbor04 - dark slate grey
+$theme-color05: #59D8E5; //harbor05 - bright cyan
+$image-path: "../img";
+$font-path: "../font";
+$css-prefix: 'npc';
+
+// Begin Foundation Overrides
+// 1. Global
+// ---------
+$global-lineheight: 1;
+$body-background: $theme-color01;
+$primary-color: $theme-color04;
+$secondary-color: $theme-color05;
+$body-font-family: $font-trebuchet;
+
+// 4. Base Typography
+// ------------------
+$header-font-family: $font-trebuchet;
+
+// 11. Button
+// ----------
+$button-background: $theme-color03;
+$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-color: #fff;
+$button-color-alt: #000;
