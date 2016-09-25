@@ -50,83 +50,106 @@ body.#{$css-prefix}--l33tMode {
     }
     
     &__annual {
-        font-size: rem-calc(16);
+        font-size: rem-calc(14);
         letter-spacing: rem-calc(-1);
 
-        @include breakpoint(large up) {
-            font-size: rem-calc(18);
+        @include breakpoint(medium up) {
+            font-size: rem-calc(16);
         }
     }
 
     &__eventDate {
-        font-size: rem-calc(32);
+        font-size: rem-calc(26);
         letter-spacing: rem-calc(-2);
         text-transform: uppercase;
 
-        @include breakpoint(large up) {
-            font-size: rem-calc(34);
+        @include breakpoint(medium up) {
+            font-size: rem-calc(32);
         }
-    }  
+    }
+
+    &__navMain {
+        margin: 1rem 0;
+
+        ul {
+            background-color: $theme-color05;
+            font-size: rem-calc(14);
+            font-weight: bold;
+            letter-spacing: rem-calc(-1);
+
+            li {
+                text-transform: uppercase;
+
+                a {
+                    color: $theme-color04;
+                    line-height: rem-calc(30);
+                    text-decoration: none;
+                    padding: 0 0.5rem;
+
+                    &:hover {
+                        background-color: $theme-color04;
+                        color: $theme-color05;
+                    }
+
+                    &:active {
+                        background-color: lighten($theme-color04, 10%);
+                        color: lighten($theme-color05, 10%);
+                    }
+                }
+
+                &.selected {
+                    a {
+                        color: #4a5455;
+
+                        &:hover {
+                            color: $theme-color05;
+                        }
+
+                        &:active {
+                            color: lighten($theme-color05, 10%);
+                        }
+                    }
+                }
+            }
+
+            @include breakpoint(medium up) {
+                font-size: rem-calc(16);
+
+                li {
+                    a {
+                        line-height: rem-calc(40);
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__askCheesy {
+        background-color: $theme-color05;
+        position: relative;
+    }
+
+    &__askCheesy--hover &__cheesySurprise {
+        @include breakpoint(medium up) {
+            visibility: visible;
+            bottom: 35px;
+        }
+    }
+
+    &__cheesySurprise {
+        background: url("#{$image-path}/ask-cheesy-hover.png") no-repeat;
+        bottom: 0;
+        visibility: hidden;
+        height: 75px;
+        position: absolute;
+        right: 31px;
+        width: 43px;
+        z-index: -1;
+        transform: translate3d(0, 0, 0);
+        transition: all 0.1s ease-in-out;
+    }
 }
-
-// .nav-main {
-//     margin: 1rem 0;
-
-//     ul {
-//         background-color: $theme-color05;
-//         font-weight: bold;
-//         letter-spacing: rem-calc(-1);
-
-//         li {
-//             text-transform: uppercase;
-
-//             a {
-//                 color: $theme-color04;
-//                 line-height: rem-calc(40);
-//                 text-decoration: none;
-//                 padding: 0 1rem;
-
-//                 &:hover {
-//                     background-color: $theme-color04;
-//                     color: $theme-color05;
-//                 }
-//             }
-
-//             &.selected {
-//                 a {
-//                     color: #4a5455;
-
-//                     &:hover {
-//                         color: $theme-color05;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// li.ask-cheesy {
-//     background-color: $theme-color05;
-//     position: relative;
-
-//     .ask-cheesy-surprise {
-//         background: url("#{$image-path}/ask-cheesy-hover.png") no-repeat;
-//         bottom: 0;
-//         visibility: hidden;
-//         height: 75px;
-//         position: absolute;
-//         right: 31px;
-//         width: 43px;
-//         z-index: -1;
-//         transform: translate3d(0, 0, 0);
-//         transition: all 0.1s ease-in-out;
-//     }
-
-//     &.hover .ask-cheesy-surprise {
-//         visibility: visible;
-//         bottom: 35px;
-//     }
-// }
 
 // .main-gallery {
 //     $height-small: rem-calc(260);
