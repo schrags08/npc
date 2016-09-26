@@ -1,18 +1,9 @@
 @import 'util/util';
 @import 'ibm_vga8';
 
-body.#{$css-prefix}--l33tMode {
-    background-color: #000;
-    
-    * {
-        font-family: 'IBMVGA8';
-        color: #00ff00;
-    }
-}
-
 .#{$css-prefix} {
     &__wrapper {
-        min-width: 320px;
+        min-width: rem-calc(320);
     }
 
     &__header {
@@ -24,11 +15,16 @@ body.#{$css-prefix}--l33tMode {
             text-align: center;
             margin-bottom: 1rem;
         }
+
+        &--l33tMode {
+            display: none;
+        }
     }
 
     &__eventInfo {
         // todo: replace these with SVGs so we can manipulate the color easily
-        background: url("#{$image-path}/chalice.png") right center no-repeat;
+        background: url("#{$image-path}/chalice.svg") right center no-repeat;
+        background-size: contain;
         color: $theme-color04;
         padding-right: rem-calc(40);
 
@@ -126,7 +122,6 @@ body.#{$css-prefix}--l33tMode {
     }
 
     &__askCheesy {
-        background-color: $theme-color05;
         position: relative;
     }
 
@@ -148,6 +143,70 @@ body.#{$css-prefix}--l33tMode {
         z-index: -1;
         transform: translate3d(0, 0, 0);
         transition: all 0.1s ease-in-out;
+    }
+
+    &__foundingFathers {
+        width: 100%;
+    }
+}
+
+// Easter Egg
+
+body.#{$css-prefix}--l33tMode {
+    background-color: #000;
+    
+    * {
+        font-family: 'IBMVGA8';
+        color: $theme-colorl33t;
+    }
+
+    .#{$css-prefix} {
+        &__brand {
+            display: none;
+
+            &--l33tMode {
+                display: block;
+            }
+        }
+
+        &__eventInfo {
+            background: url("#{$image-path}/chalicel33t.svg") right center no-repeat;
+            background-size: contain;
+        }
+
+        &__navMain {
+            ul {
+                background-color: #000;
+
+                li {
+                    a {
+                        color: $theme-colorl33t;
+                    
+                        &:hover {
+                            background-color: $theme-color04;
+                            color: $theme-colorl33t;
+                        }
+
+                        &:active {
+                            background-color: lighten($theme-color04, 10%);
+                            color: whitesmoke;
+                        }
+                    }
+
+                    &.selected {
+                        a {
+                            background-color: $theme-color04;
+                            color: white;
+
+                            &:hover,
+                            &:active {
+                                color: whitesmoke;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

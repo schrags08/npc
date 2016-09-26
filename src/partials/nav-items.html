@@ -1,5 +1,5 @@
-<li><a href="{{ root }}/history.html">History</a></li>
-<li><a href="{{ root }}/bars.html">The Bars</a></li>
-<li class="{{ global.cssPrefix }}__askCheesy"><a href="{{ root }}/askcheesy.html">Ask Cheesy</a>
+<li {{#ifpage 'history'}}class="selected"{{/ifpage}}><a href="{{ root }}/history.html">History</a></li>
+<li {{#ifpage 'bars'}}class="selected"{{/ifpage}}><a href="{{ root }}/bars.html">The Bars</a></li>
+<li class="{{ global.cssPrefix }}__askCheesy {{#ifpage 'askcheesy'}}selected{{/ifpage}}"><a href="{{ root }}/askcheesy.html">Ask Cheesy</a>
     <div class="{{ global.cssPrefix }}__cheesySurprise"></div>
 </li>
