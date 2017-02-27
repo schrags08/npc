@@ -25,15 +25,16 @@ PATHS:
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "bower_components/foundation-sites/scss"
+    - "bower_components/flickity/dist/"
     # - "bower_components/motion-ui/src"
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
     # Libraries requried by Foundation
     - "bower_components/jquery/dist/jquery.js"
-    # - "bower_components/what-input/what-input.js"
+    - "bower_components/what-input/dist/what-input.js"
     # Core Foundation files
-    # - "bower_components/foundation-sites/js/foundation.core.js"
-    # - "bower_components/foundation-sites/js/foundation.util.*.js"
+    - "bower_components/foundation-sites/js/foundation.core.js"
+    - "bower_components/foundation-sites/js/foundation.util.*.js"
     # Individual Foundation components
     # If you aren't using a component, just remove it from the list
     # - "bower_components/foundation-sites/js/foundation.abide.js"
@@ -56,6 +57,9 @@ PATHS:
     # - "bower_components/foundation-sites/js/foundation.toggler.js"
     # - "bower_components/foundation-sites/js/foundation.tooltip.js"
     # Paths to your own project code are here
+    - "bower_components/flickity/dist/flickity.pkgd.js"
+    - "bower_components/countdownjs/countdown.js"
+    - "bower_components/macy/dist/macy.js"
     - "bower_components/konami-js/konami.js"
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"

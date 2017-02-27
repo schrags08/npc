@@ -148,6 +148,114 @@
     &__foundingFathers {
         width: 100%;
     }
+
+    &__flickity-gallery {
+        $flickity-height-small: rem-calc(260);
+        $flickity-height-medium-up: rem-calc(460);
+        $flickity-prev-next-button-left-right: rem-calc(35);
+
+        height: $flickity-height-small;
+        margin-bottom: 1rem;
+
+        .#{$css-prefix}__gallery-cell {
+            img {
+                display: block;
+                height: $flickity-height-small;
+                max-width: none;
+            }
+        }
+
+        @include breakpoint(medium up) {
+            height: $flickity-height-medium-up;
+
+            .#{$css-prefix}__gallery-cell {
+                img {
+                    height: $flickity-height-medium-up;
+                }
+            }
+        }
+
+        .flickity-prev-next-button {
+            background: hsla(0, 0%, 100%, 0.25);
+
+            &:hover {
+                background: hsla(0, 0%, 100%, 0.55);
+            }
+        }
+
+        .flickity-prev-next-button.previous {
+            left: $flickity-prev-next-button-left-right;
+        }
+
+        .flickity-prev-next-button.next {
+            right: $flickity-prev-next-button-left-right;
+        }
+    }
+
+    &__macy-gallery {
+        // img {
+        //     transition-duration: 0.5s;
+        //     transition-property: height, width, left, right, top;
+        //     transition-timing-function: ease-in-out;
+        // }
+    }
+
+    &__feature {
+        text-align: center;
+        
+        h2,
+        h3 {
+            line-height: 1;
+        }
+
+        h2 {
+            background-color: $theme-color05;
+            color: $theme-color04;
+            font-size: rem-calc(24);
+            letter-spacing: rem-calc(-1);
+            margin-bottom: 1rem;
+            padding: 1rem;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            color: $theme-color04;
+            font-size: rem-calc(24);
+            margin-bottom: rem-calc(10);
+        }
+    }
+
+    &__img-sidebar {
+        text-align: right;
+    }
+
+    &__bar {
+        margin: 0 0 1rem;
+
+        .activities {
+            font-weight: bold;
+        }
+    }
+
+    &__bar-header {
+        padding-bottom: 1rem;
+    }
+
+    &__bar-name {
+        font-size: rem-calc(22);
+    }
+
+    &__bar-timeslot {
+        color: $theme-color03;
+        display: block;
+        font-size: rem-calc(14);
+        line-height: rem-calc(22);
+        text-align: right;
+
+        @include breakpoint(small only) {
+            text-align: left;
+        }
+    }
 }
 
 // Easter Egg
@@ -176,7 +284,7 @@ body.#{$css-prefix}--l33tMode {
 
         &__navMain {
             ul {
-                background-color: #000;
+                background-color: #333;
 
                 li {
                     a {
@@ -210,107 +318,8 @@ body.#{$css-prefix}--l33tMode {
     }
 }
 
-// .main-gallery {
-//     $height-small: rem-calc(260);
-//     $height-medium-up: rem-calc(460);
-//     $flickity-prev-next-button-left-right: rem-calc(35);
-
-//     height: $height-small;
-//     margin-bottom: 1rem;
-
-//     .gallery-cell {
-//         img {
-//             display: block;
-//             height: $height-small;
-//             max-width: none;
-//             // vertical-align: baseline;
-//         }
-//     }
-
-//     @include breakpoint(medium up) {
-//         height: $height-medium-up;
-
-//         .gallery-cell {
-//             img {
-//                 height: $height-medium-up;
-//             }
-//         }
-//     }
-
-//     .flickity-prev-next-button {
-//         background: hsla(0, 0%, 100%, 0.25);
-
-//         &:hover {
-//             background: hsla(0, 0%, 100%, 0.55);
-//         }
-//     }
-
-//     .flickity-prev-next-button.previous {
-//         left: $flickity-prev-next-button-left-right;
-//     }
-
-//     .flickity-prev-next-button.next {
-//         right: $flickity-prev-next-button-left-right;
-//     }
 
 
-// }
 
-// .features {
-//     .feature {
-//         text-align: center;
-//     }
 
-//     h2,
-//     h3 {
-//         line-height: 1;
-//     }
 
-//     h2 {
-//         background-color: $theme-color05;
-//         color: $theme-color04;
-//         font-size: rem-calc(24);
-//         letter-spacing: rem-calc(-1);
-//         margin-bottom: 1rem;
-//         padding: 1rem;
-//         text-transform: uppercase;
-//     }
-
-//     h3 {
-//         color: $theme-color04;
-//         font-size: rem-calc(24);
-//         margin-bottom: rem-calc(10);
-//     }
-// }
-
-// .img-sidebar {
-//     text-align: right;
-// }
-
-// .bar {
-//     margin: 0 0 1rem;
-// }
-
-// .bar-header {
-//     padding-bottom: 1rem;
-// }
-
-// .bar-name {
-//     font-size: rem-calc(22);
-// }
-
-// .bar-timeslot {
-//     color: $theme-color03;
-//     display: block;
-//     font-size: rem-calc(14);
-//     line-height: rem-calc(22);
-//     text-align: right;
-
-//     @include breakpoint(small only) {
-//         text-align: left;
-//     }
-// }
-
-// .activities {
-//     font-weight: bold;
-// }

@@ -3,7 +3,29 @@ title: The Bars
 ---
 <div class="row">
     <div class="small-12 columns">
-        <h3>The Bars</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere excepturi omnis, inventore neque vitae cumque nisi dignissimos laboriosam, rerum maxime repellat, officia deserunt incidunt eaque autem necessitatibus voluptatem aliquam minima.</p>
+        {{#each bars.bars}}
+            <div class="{{ ../global.cssPrefix }}__bar">
+                <div class="row {{ ../global.cssPrefix }}__bar-header">
+                    <div class="small-12 medium-6 columns">
+                        <span class="{{ ../global.cssPrefix }}__bar-name">{{this.name}}</span>
+                    </div>
+                    <div class="small-12 medium-6 columns">
+                        <span class="{{ ../global.cssPrefix }}__bar-timeslot">approximate time: {{this.startTime}} - {{this.endTIme}}</span>
+                    </div>
+                </div>
+                <div class="row {{ ../global.cssPrefix }}__bar-info">
+                    <div class="small-9 columns">
+                        <div class="{{ ../global.cssPrefix }}__bar-description">
+                            {{{this.description}}}
+                        </div>
+                    </div>
+                    <div class="small-3 columns {{ ../global.cssPrefix }}__img-sidebar">
+                        <div class="{{ ../global.cssPrefix }}__bar-image">
+                            <img src="{{ root }}{{ this.imageUrl }}" title="{{ this.name }}" alt="{{ this.name }}" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
     </div>
 </div>

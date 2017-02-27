@@ -1,3 +1,17 @@
+# TODO
+
+- X port bars page
+- X get flickity working
+- X attempt to get a gallery working with bricks or macy.js
+  - should read from data file
+- add gallery images to Azure
+- old code is in foundation.npc1
+- legacy site data is in OneDrive/EC2Backup/npc
+- JS should only load for the pages that need it
+  - e.g. app.js is currently loading flickity on child pages
+- verify timeslots on bars page
+- add footer from old site
+
 # Neighborhood Pub Crawl Template
 
 This is the official Neighborhood Pub Crawl website template. It has a Gulp-powered build system with these features:
