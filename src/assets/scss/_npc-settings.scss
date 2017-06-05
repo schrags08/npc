@@ -20,6 +20,13 @@ $css-prefix: 'npc';
 $global-lineheight: 1;
 $body-background: $theme-color01;
 $primary-color: $theme-color04;
+$foundation-palette: (
+  primary: $theme-color04,
+  secondary: $theme-color02,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #ec5840,
+);
 $secondary-color: $theme-color05;
 $body-font-family: $font-trebuchet;
 

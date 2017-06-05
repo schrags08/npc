@@ -1,0 +1,63 @@
+---
+title: Sign Up
+---
+<div class="row">
+    <div class="small-12 medium-8 columns">
+        <h3>What Does Registration Get Me?</h3>
+        <p>Most importantly, the official Neighborhood Pub Crawl T-Shirt. These puppies are limited edition, custom designed, soft as hell, and built for comfort. Coveted stuff. As always, the artwork will remain secret until crawl day.</p>
+        <p>In addition to that, you get food during our stop at Three Counties. Papa Joe's Pizza, a neighborhood favorite, provides their legendary pie for our mouths.</p>
+        <p>But wait, there's more...you get a shot at winning the Golden Ticket and are automatically entered into our one of a kind Neighborhood Pub Crawl Raffle.</p>
+        <p>Registration fees also help cover the extensive Rider requests of the infamous HOYHIMSFY green room as well as keep Captain Fun funded and on the lookout to please.</p>
+        <p>All proceeds go back into the event. I make no profit.</p>
+        <!--<div class="callout primary">
+            <p><strong>Registration can only be done in advance.</strong> <strong>Shirts will not be sold on crawl day.</strong></p>
+            <p><strong>Registration must be completed by {{ dateFormat global.registrationDeadlineDate 'MMMM Do, YYYY' }}</strong></p>
+        </div>-->
+        <p>Shirts are picked up at the first bar, Mary's Place. I will not be carrying the backpack of shirts around this year like a dope. If you want yours, get to the first bar on time. Don't blow it.</p>
+        <h4>How Much?</h4>
+        <p><strong>The cost of registration is $30</strong>. Well worth it for the souvenir and experience of a lifetime.</p>
+        <p>Registration can be completed via <strong>Venmo</strong> or <strong>PayPal</strong>.</p>
+        <h4>Why So Early?</h4>
+        <p>It takes time to ship &amp; print our badass shirts. We appreciate your cooperation.</p>
+    </div>
+    <div class="small-12 medium-4 columns">
+        <!--<h3>Registration <strong>MUST</strong> be completed by <strong>{{ dateFormat global.registrationDeadlineDate 'MMMM Do, YYYY' }}</strong>.</h3>-->
+        <!--<p>It's pretty easy. Select your desired size, click Pay Now, then follow the instructions.</p>
+        <p>If you do it right you should receive an e-mail confirmation and that's it, you're done. It's really that simple.</p>-->
+        <h4>Register by {{ dateFormat global.registrationDeadlineDate 'MMMM Do, YYYY' }}</h4>
+        <p><strong>Registration can only be done in advance.</strong> <strong>Shirts will not be sold on crawl day.</strong></p>
+        <p>You Can Pay via Venmo or PayPal. Venmo is preferred.</p>
+        <div class="method">
+            <select name="payment">
+                <option value="Pay via...">-Payment Method-</option>
+                <option value="venmo" selected="true">Venmo</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </div>
+        <div class="modifier">
+            <select name="size">
+                <option value="Select a Size">-Shirt Size-</option>
+                <option value="XS">Extra Small</option>
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">Extra Large</option>
+                <option value="XXL">Extra Extra Large</option>
+            </select>
+        </div>
+        <div class="checkout checkout--venmo" style="display:none;">
+            <p>Click on the Venmo logo below to complete the process.</p>
+            <a href="" class="payment-button payment-button--venmo" target="_blank"  title="Pay via Venmo">
+                <img src="{{ root }}assets/img/venmo_logo_blue.png" alt="Pay via Venmo">
+            </a>
+        </div>
+        <div class="checkout checkout--paypal" style="display:none;">
+            <p>Click on the PayPal logo below to complete the process.</p>
+            <p><strong>Please specify your shirt size in the payment options.</strong></p>
+            <p>Available Sizes: XS, S, M, L, XL, XXL</p>
+            <a class="payment-button payment-button--paypal" href="https://www.paypal.com/paypalme/schrags08/30" target="_blank" title="Pay via PayPal">
+                <img src="{{ root }}assets/img/paypal_logo.png" alt="Pay via PayPal">
+            </a>
+        </div>
+    </div>
+</div>

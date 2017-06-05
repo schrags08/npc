@@ -258,6 +258,26 @@
     }
 }
 
+.checkout {
+        &.checkout--venmo {
+
+        }
+    }
+
+    .payment-button {
+        display: block;
+        padding: 1rem 0;
+        text-align: center;
+
+        &.payment-button--venmo img {
+            width: 50%;
+        }
+
+        &.payment-button--paypal img {
+            // width: 50%;
+        }
+    }
+
 // Easter Egg
 
 body.#{$css-prefix}--l33tMode {

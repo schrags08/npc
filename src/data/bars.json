@@ -26,25 +26,25 @@
     }, {
         "name": "The Three Counties Irish Pub",
         "startTime": "6:30 PM",
-        "endTIme": "7:55 PM",
+        "endTIme": "8:00 PM",
         "imageUrl": "/assets/img/bars/threecounties.jpg",
         "description": "<p>A fan favorite and host like no other. Opening their loving arms to our annual H.O.Y.H.I.M.S.F.Y. jam, this authentic Irish gem pours a dynamite pint of the black stuff. Throw some darts, peruse the jukebox, enjoy the beer garden, and chat up the friendly staff about anything Irish. Top Notch. Formerly Snuggles Pub...oh man, if these walls could talk!</p><p><span class=\"activities\">Activities</span>: rock, H.O.Y.H.I.M.S.F.Y., outdoor patio, pizza</p>"
     }, {
         "name": "Gladstone Lounge & Liquors",
-        "startTime": "8:05 PM",
+        "startTime": "8:10 PM",
         "endTIme": "8:55 PM",
         "imageUrl": "/assets/img/bars/gladstone.jpg",
         "description": "<p>Gladstone Lounge &amp; Liquors is what they had in mind when the term &quot;diamond in the rough&quot; was coined. Pool tables, locals, karaoke, NASCAR, and masterful woodwork combine to create a one-of-a-kind atmosphere rivaled by nothing. Honoring more drink specials than you can imagine, it's hard to leave disappointed from the endless comforts of the Lounge. Their bathroom is one of a kind.</p><p><span class=\"activities\">Activities</span>: pool, drink specials, admiring, pay phone</p>"
     }, {
         "name": "The Thatch Pub",
         "startTime": "9:00 PM",
-        "endTIme": "10:45 PM",
+        "endTIme": "11:45 PM",
         "imageUrl": "/assets/img/bars/thatch.jpg",
         "description": "<p>The Thatch gives Three Counties a run for its money when it comes to the black stuff. I'd suggest a pint to start things off. They upped their game in 2015 by hosting our legendary dance party and Chalice presentation. Things went off without a hitch and the change of location was met with rave reviews. Bring your A game and attmept to answer Captain Fun's prayers. He'll take you there.</p><p><span class=\"activities\">Activities</span>: dancing, Guinness, lasers, Chalice presentation</p>"
     }, {
         "name": "Vaughan’s Pub & Grill",
-        "startTime": "11:05 PM",
-        "endTIme": "12:00 AM",
+        "startTime": "12:00 AM",
+        "endTIme": "?",
         "imageUrl": "/assets/img/bars/vaughans.jpg",
         "description": "<p>Vaughan's Pub &amp; Grill rounds out our crawl and kindly serves as our final destination. This is where it all began, folks.  The namesake of our coveted Chalice, Vaughan's hosted our legendary dance party in their luxurious upstairs party suite for many many years. Make sure you ask around for the owner, Anne, and thank her at every turn for being awesome.</p><p><span class=\"activities\">Activities</span>: Guinness, jukebox, DJs, booths, craic, goodbyes</p>"
     }]

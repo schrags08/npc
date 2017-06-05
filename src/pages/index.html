@@ -3,7 +3,7 @@ title: Home
 ---
 <div class="row">
     <div class="{{ global.cssPrefix }}__flickity-gallery small-12 columns">
-        {{> gallery2014 }}
+        {{> gallery2016 }}
     </div>
 </div>
 <div class="row {{ global.cssPrefix }}__features">
@@ -29,17 +29,22 @@ title: Home
             </div>
             <div class="small-12 medium-6 columns {{ global.cssPrefix }}__feature">
                 <h2>Want updates?</h2>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <button type="button" class="button">Submit</button>
+                <div class="{{ global.cssPrefix }}__updates-form">
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="text" placeholder="Email" name="email">
+                    <button type="button" class="button" name="signup">Submit</button>
+                </div>
+                <div class="{{ global.cssPrefix }}__updates-message callout" style="display: none;">
+                    
+                </div>
             </div>
         </div>
     </div>
 </div>
 <script type="text/javascript">
-    window.schrags = {
+    window.schrags = Object.assign(window.schrags || {}, {
         "global": {
             "eventDate": "{{ global.eventDate }}"
         }
-    };
+    });
 </script>
