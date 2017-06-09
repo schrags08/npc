@@ -59,7 +59,7 @@ PATHS:
     # Paths to your own project code are here
     - "bower_components/flickity/dist/flickity.pkgd.js"
     - "bower_components/countdownjs/countdown.js"
-    - "bower_components/macy/dist/macy.js"
-    - "bower_components/konami-js/konami.js"
+    # - "bower_components/macy/dist/macy.js"
+    # - "bower_components/konami-js/konami.js"
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"

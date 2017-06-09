@@ -3,7 +3,7 @@ const CSS_PREFIX = 'npc';
 $(function() {
     // initAskCheesyAnimation();
     initFlickity();
-    initMacy();
+    // initMacy();
     initCountdown();
     // initEasterEgg();
     initSignUp();
@@ -41,17 +41,21 @@ function initFlickity() {
 }
 
 function initMacy() {
-    Macy.init({
-        container: `.${CSS_PREFIX}__macy-gallery`,
-        trueOrder: true,
-        waitForImages: false,
-        margin: 16,
-        columns: 5,
-        breakAt: {
-            1024: 3,
-            640: 1
-        }
-    });
+    var container = document.querySelector(`.${CSS_PREFIX}__macy-gallery`);
+    
+    if (container) {
+        Macy.init({
+            container: `.${CSS_PREFIX}__macy-gallery`,
+            trueOrder: true,
+            waitForImages: false,
+            margin: 16,
+            columns: 5,
+            breakAt: {
+                1024: 3,
+                640: 1
+            }
+        });
+    }
 }
 
 function initCountdown() {
