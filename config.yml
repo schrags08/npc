@@ -17,7 +17,7 @@ UNCSS_OPTIONS:
 # Gulp will reference these paths when it copies files
 PATHS:
   # Path to dist folder
-  dist: "dist"  
+  dist: "dist"
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"
@@ -59,7 +59,7 @@ PATHS:
     # Paths to your own project code are here
     - "bower_components/flickity/dist/flickity.pkgd.js"
     - "bower_components/countdownjs/countdown.js"
-    - "bower_components/macy/dist/macy.js"
+    # - "bower_components/macy/dist/macy.js"
     - "bower_components/konami-js/konami.js"
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"

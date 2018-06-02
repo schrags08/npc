@@ -15,11 +15,11 @@
     "tests"
   ],
   "dependencies": {
-    "foundation-sites": "^6.3.0",
-    "konami-js": "^1.4.6",
-    "flickity": "^2.0.5",
-    "macy": "^1.1.2",
-    "countdownjs": "^2.6.0"
+    "foundation-sites": "6.3.0",
+    "konami-js": "1.4.6",
+    "flickity": "2.0.5",
+    "macy": "1.1.2",
+    "countdownjs": "2.6.0"
   },
   "private": true
 }

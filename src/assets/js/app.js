@@ -3,9 +3,9 @@ const CSS_PREFIX = 'npc';
 $(function() {
     // initAskCheesyAnimation();
     initFlickity();
-    initMacy();
+    // initMacy();
     initCountdown();
-    // initEasterEgg();
+    initEasterEgg();
     initSignUp();
     initRegistration();
 });
@@ -19,12 +19,40 @@ function initAskCheesyAnimation() {
 function initEasterEgg() {
     var isEggEnabled = false;
 
+    if (document.cookie.split(';').filter((item) => {
+        return item.includes('npcEgg=true');
+    }).length) {
+        console.log('The cookie "npcEgg" has "true" for value');
+        isEggEnabled = true;
+    }
+
+    updateEggMode(isEggEnabled);
+
     new Konami(function () {
-        var status = !isEggEnabled ? 'e]\[@bl3D' : 'diZ481Ed';
-        $('body').toggleClass(`${CSS_PREFIX}--l33tMode`);
-        console.log(`H4x0r l337 ]\/[0D3 ${status}...`);
         isEggEnabled = !isEggEnabled;
+        document.cookie = `npcEgg=${isEggEnabled ? 'true' : 'false'}`;
+
+        var status = isEggEnabled ? 'e]\[@bl3D' : 'diZ481Ed';
+        console.log(`H4x0r l337 ]\/[0D3 ${status}...`);
+
+        updateEggMode(isEggEnabled);
     });
+}
+
+function updateEggMode(enabled) {
+    if (enabled) {
+        enableEggMode();
+    } else {
+        disableEggMode();
+    }
+}
+
+function enableEggMode() {
+    $('body').addClass(`${CSS_PREFIX}--l33tMode`);
+}
+
+function disableEggMode() {
+    $('body').removeClass(`${CSS_PREFIX}--l33tMode`);
 }
 
 function initFlickity() {
@@ -40,19 +68,23 @@ function initFlickity() {
     });
 }
 
-function initMacy() {
-    Macy.init({
-        container: `.${CSS_PREFIX}__macy-gallery`,
-        trueOrder: true,
-        waitForImages: false,
-        margin: 16,
-        columns: 5,
-        breakAt: {
-            1024: 3,
-            640: 1
-        }
-    });
-}
+// function initMacy() {
+//     var container = document.querySelector(`.${CSS_PREFIX}__macy-gallery`);
+
+//     if (container) {
+//         Macy.init({
+//             container: `.${CSS_PREFIX}__macy-gallery`,
+//             trueOrder: true,
+//             waitForImages: false,
+//             margin: 16,
+//             columns: 5,
+//             breakAt: {
+//                 1024: 3,
+//                 640: 1
+//             }
+//         });
+//     }
+// }
 
 function initCountdown() {
     if (document.getElementById('countdown')) {
@@ -71,15 +103,19 @@ function initSignUp() {
 
     if (button) {
         button.addEventListener('click', e => {
-            button.disabled = true;
-            button.innerHTML = 'Processing';
-
             var name = document.querySelector('input[name="name"]');
             var email = document.querySelector('input[name="email"]');
             var updatesForm = document.querySelector(`.${CSS_PREFIX}__updates-form`);
             var updatesMessage = document.querySelector(`.${CSS_PREFIX}__updates-message`);
             var url = `https://neighborhoodpubcrawl.azurewebsites.net/api/AddPatronTest?name=${encodeURIComponent(name.value)}&email=${encodeURIComponent(email.value)}`;
-            
+            var hasValidValues = name.value.length > 0 && email.value.length > 0;
+
+            if (!hasValidValues) {
+                return;
+            }
+
+            button.disabled = true;
+            button.innerHTML = 'Processing';
             updatesForm.style.display = 'block';
             updatesMessage.classList.remove('success', 'alert');
             updatesMessage.innerHTML = '';
@@ -115,7 +151,7 @@ function initRegistration() {
 
     function paymentChange() {
         let index = payment.selectedIndex;
-        
+
         reset();
 
         switch(index) {
@@ -134,8 +170,8 @@ function initRegistration() {
     function sizeChange() {
         var sizeIndex = size.selectedIndex;
         var sizeOption = size.options[sizeIndex].value;
-        
-        var url = `https://venmo.com/?txn=pay&audience=private&recipients=schrags08&amount=30&note=NPC2017-${sizeOption}`;
+
+        var url = `https://venmo.com/?txn=pay&audience=private&recipients=schrags08&amount=30&note=NPC2018-${sizeOption}`;
 
         if (sizeIndex > 0) {
             $('.checkout--venmo').show();
