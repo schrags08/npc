@@ -4,62 +4,28 @@ PORT: 8000
 # Autoprefixer will make sure your CSS works with these browsers
 COMPATIBILITY:
   - "last 2 versions"
-  - "ie >= 9"
+  - "ie >= 11"
 
 # UnCSS will use these settings
 UNCSS_OPTIONS:
   html:
-    - "src/**/*.html"
+    - "dist/**/*.html"
   ignore:
-    - !!js/regexp .foundation-mq
-    - !!js/regexp ^\.is-.*
+    - .foundation-mq
+    - !!js/regexp /\.is-\w+/
 
 # Gulp will reference these paths when it copies files
 PATHS:
   # Path to dist folder
-  dist: "dist"  
+  dist: "dist"
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"
     - "!src/assets/{img,js,scss}/**/*"
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
-    - "bower_components/foundation-sites/scss"
-    - "bower_components/flickity/dist/"
-    # - "bower_components/motion-ui/src"
-  # Paths to JavaScript libraries, which are compined into one file
-  javascript:
-    # Libraries requried by Foundation
-    - "bower_components/jquery/dist/jquery.js"
-    - "bower_components/what-input/dist/what-input.js"
-    # Core Foundation files
-    - "bower_components/foundation-sites/js/foundation.core.js"
-    - "bower_components/foundation-sites/js/foundation.util.*.js"
-    # Individual Foundation components
-    # If you aren't using a component, just remove it from the list
-    # - "bower_components/foundation-sites/js/foundation.abide.js"
-    # - "bower_components/foundation-sites/js/foundation.accordion.js"
-    # - "bower_components/foundation-sites/js/foundation.accordionMenu.js"
-    # - "bower_components/foundation-sites/js/foundation.drilldown.js"
-    # - "bower_components/foundation-sites/js/foundation.dropdown.js"
-    # - "bower_components/foundation-sites/js/foundation.dropdownMenu.js"
-    # - "bower_components/foundation-sites/js/foundation.equalizer.js"
-    # - "bower_components/foundation-sites/js/foundation.interchange.js"
-    # - "bower_components/foundation-sites/js/foundation.magellan.js"
-    # - "bower_components/foundation-sites/js/foundation.offcanvas.js"
-    # - "bower_components/foundation-sites/js/foundation.orbit.js"
-    # - "bower_components/foundation-sites/js/foundation.responsiveMenu.js"
-    # - "bower_components/foundation-sites/js/foundation.responsiveToggle.js"
-    # - "bower_components/foundation-sites/js/foundation.reveal.js"
-    # - "bower_components/foundation-sites/js/foundation.slider.js"
-    # - "bower_components/foundation-sites/js/foundation.sticky.js"
-    # - "bower_components/foundation-sites/js/foundation.tabs.js"
-    # - "bower_components/foundation-sites/js/foundation.toggler.js"
-    # - "bower_components/foundation-sites/js/foundation.tooltip.js"
-    # Paths to your own project code are here
-    - "bower_components/flickity/dist/flickity.pkgd.js"
-    - "bower_components/countdownjs/countdown.js"
-    - "bower_components/macy/dist/macy.js"
-    - "bower_components/konami-js/konami.js"
-    - "src/assets/js/!(app).js"
+    - "node_modules/foundation-sites/scss"
+    - "node_modules/flickity/dist/"
+  # Paths to JavaScript entry points for webpack to bundle modules
+  entries:
     - "src/assets/js/app.js"
