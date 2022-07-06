@@ -192,14 +192,6 @@
         }
     }
 
-    &__macy-gallery {
-        // img {
-        //     transition-duration: 0.5s;
-        //     transition-property: height, width, left, right, top;
-        //     transition-timing-function: ease-in-out;
-        // }
-    }
-
     &__feature {
         text-align: center;
 
@@ -257,8 +249,11 @@
         }
     }
 
-
-
+    &__valor {
+        background: url("#{$image-path}/chalice.svg") right center no-repeat;
+        background-size: contain;
+        font-weight: bold;
+    }
 }
 
 .checkout {
@@ -343,6 +338,12 @@ body.#{$css-prefix}--l33tMode {
                     }
                 }
             }
+        }
+
+        &__valor {
+            background: url("#{$image-path}/chalicel33t.svg") right center no-repeat;
+            background-size: contain;
+            font-weight: bold;
         }
     }
 }
