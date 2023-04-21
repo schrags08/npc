@@ -191,7 +191,7 @@ function initRegistration() {
         var sizeIndex = size.selectedIndex;
         var sizeOption = size.options[sizeIndex].value;
 
-        var url = `https://venmo.com/?txn=pay&audience=private&recipients=schrags08&amount=35&note=NPC2022-${sizeOption}`;
+        var url = `https://venmo.com/?txn=pay&audience=private&recipients=schrags08&amount=35&note=NPC2023-${sizeOption}`;
 
         if (sizeIndex > 0) {
             $('.checkout--venmo').show();

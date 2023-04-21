@@ -1,40 +1,39 @@
 {
-    "bars": [{
-        "name": "Mary's Place",
-        "startTime": "1:00 PM",
-        "endTIme": "3:45 PM",
-        "imageUrl": "/assets/img/bars/marysplace.jpg",
-        "description": "<p>Mary's Place is the staging area and starting point on our journey and few would have it any other way. Hosting the annual bags tournament and boasting ice cold, dirt cheap Old Style bottles, snacks, scenic mural covered walls, a cozy &quot;gaming&quot; area, a spacious, yet picturesque beer garden, and the friendliest of staff, Mary's little slice of heaven is sure to leave you begging the timekeeper for a few extra minutes right out of the gate.</p><p><span class=\"activities\">Activities</span>: early bird bags tournament, outdoor patio, meet and greet, jumbo jenga, hot dogs, t-shirt pickup, golden ticket raffle, group photo</p>"
-    }, {
-        "name": "Filonek's",
-        "startTime": "3:50 PM",
-        "endTIme": "4:35 PM",
-        "imageUrl": "/assets/img/bars/filoneks.jpg",
-        "description": "<p>Recently renovated with large, garage style front windows Filonek's might surprise even the most veteran of crawlers.  With boxed wines, arcade machines, Okocim by the barrel, outdoor seating, and a former Bartender of the Month, this neighborhood sleeper goes straight to the head of the class for those crawlers of Polish descent. You'll want to belly on up to the bar, as it's a preferred parking area for all those down with the white eagle.</p><p><span class=\"activities\">Activities</span>: pool, arcade style gaming, outdoor patio</p>"
-    }, {
-        "name": "The Garage",
-        "startTime": "4:40 PM",
-        "endTIme": "5:25 PM",
-        "imageUrl": "/assets/img/bars/garagebar.jpg",
-        "description": "<p>Owned and operated by Norwood Park residents, the Garage opened in 2011 with a friendly welcome from the neighborhood. Patrons can enjoy a game of shuffleboard, traditional darts, or their deep beer selection. Their Vegas style rooftop deck seats 50; has a 70 inch TV and has a designated smoking section for any puffers out there. Who's pounding?</p><p><span class=\"activities\">Activities</span>: shuffleboard, darts, smoking, root beer beer, 120 minute, rooftop action</p>"
-    }, {
-        "name": "Jet's Public House",
-        "startTime": "5:30 PM",
-        "endTIme": "6:15 PM",
-        "imageUrl": "/assets/img/bars/jets.jpg",
-        "description": "<p>Formerly the site of Wally's, Jet's is a favorite with the neighborhood youngsters, and offers up some decent pub grub. You'll want to hold your appetite for our next stop as our food there is paid for, however, must you indulge, try the tots. Grab a board game from the back and enjoy some good times with your friends. If you get the chance, I'd recommend a game of Taboo with Cheesy.</p><p><span class=\"activities\">Activities</span>: competitive board gaming, jukebox, sports on tv, darts</p>"
-    }, {
-        "name": "The Three Counties Irish Pub",
-        "startTime": "6:30 PM",
-        "endTIme": "10:00 PM",
-        "imageUrl": "/assets/img/bars/threecounties.jpg",
-        "description": "<p>A fan favorite and host like no other. Opening their loving arms to our annual H.O.Y.H.I.M.S.F.Y. jam, this authentic Irish gem pours a dynamite pint of the black stuff. Throw some darts, peruse the jukebox, enjoy the beer garden, and chat up the friendly staff about anything Irish. Top Notch. Formerly Snuggles Pub...oh man, if these walls could talk!</p><p><span class=\"activities\">Activities</span>: rock, H.O.Y.H.I.M.S.F.Y., outdoor patio, pizza</p>"
-    },
-    {
-        "name": "Gladstone Lounge & Liquors (optional)",
-        "startTime": "10:15 PM",
-        "endTIme": "11:00 PM",
-        "imageUrl": "/assets/img/bars/gladstone.jpg",
-        "description": "<p>Gladstone Lounge &amp; Liquors is what they had in mind when the term &quot;diamond in the rough&quot; was coined. Pool tables, locals, karaoke, NASCAR, and masterful woodwork combine to create a one-of-a-kind atmosphere rivaled by nothing. Honoring more drink specials than you can imagine, it's hard to leave disappointed from the endless comforts of the Lounge. Their bathroom is one of a kind.</p><p><span class=\"activities\">Activities</span>: pool, drink specials, admiring, pay phone</p>"
-    }]
+    "bars": [
+        {
+            "name": "Mary's Place",
+            "startTime": "1:00 PM",
+            "endTIme": "3:45 PM",
+            "imageUrl": "/assets/img/bars/marysplace.jpg",
+            "description": "<p>Mary's Place is the staging area and starting point on our journey and few would have it any other way. Hosting the annual bags tournament and boasting ice cold, dirt cheap Old Style bottles, snacks, scenic mural covered walls, a cozy &quot;gaming&quot; area, a spacious, yet picturesque beer garden, and the friendliest of staff, Mary's little slice of heaven is sure to leave you begging the timekeeper for a few extra minutes right out of the gate.</p><p><span class=\"activities\">Activities</span>: early bird bags tournament, outdoor patio, meet and greet, jumbo jenga, hot dogs, t-shirt pickup, golden ticket raffle, group photo</p>"
+        },
+        {
+            "name": "Filonek's",
+            "startTime": "3:50 PM",
+            "endTIme": "4:35 PM",
+            "imageUrl": "/assets/img/bars/filoneks.jpg",
+            "description": "<p>Recently renovated with large, garage style front windows Filonek's might surprise even the most veteran of crawlers.  With boxed wines, arcade machines, Okocim by the barrel, outdoor seating, and a former Bartender of the Month, this neighborhood sleeper goes straight to the head of the class for those crawlers of Polish descent. You'll want to belly on up to the bar, as it's a preferred parking area for all those down with the white eagle.</p><p><span class=\"activities\">Activities</span>: pool, arcade style gaming, outdoor patio</p>"
+        },
+        {
+            "name": "The Garage",
+            "startTime": "4:40 PM",
+            "endTIme": "5:25 PM",
+            "imageUrl": "/assets/img/bars/garagebar.jpg",
+            "description": "<p>Owned and operated by Norwood Park residents, the Garage opened in 2011 with a friendly welcome from the neighborhood. Patrons can enjoy a game of shuffleboard, traditional darts, or their deep beer selection. Their Vegas style rooftop deck seats 50; has a 70 inch TV and has a designated smoking section for any puffers out there. Who's pounding?</p><p><span class=\"activities\">Activities</span>: shuffleboard, darts, smoking, root beer beer, 120 minute, rooftop action</p>"
+        },
+        {
+            "name": "Jet's Public House",
+            "startTime": "5:30 PM",
+            "endTIme": "6:15 PM",
+            "imageUrl": "/assets/img/bars/jets.jpg",
+            "description": "<p>Formerly the site of Wally's, Jet's is a favorite with the neighborhood youngsters, and offers up some decent pub grub. You'll want to hold your appetite for our next stop as our food there is paid for, however, must you indulge, try the tots. Grab a board game from the back and enjoy some good times with your friends. If you get the chance, I'd recommend a game of Taboo with Cheesy.</p><p><span class=\"activities\">Activities</span>: competitive board gaming, jukebox, sports on tv, darts</p>"
+        },
+        {
+            "name": "The Three Counties Irish Pub",
+            "startTime": "6:30 PM",
+            "endTIme": "11:00 PM",
+            "imageUrl": "/assets/img/bars/threecounties.jpg",
+            "description": "<p>A fan favorite and host like no other. Opening their loving arms to our annual H.O.Y.H.I.M.S.F.Y. jam, this authentic Irish gem pours a dynamite pint of the black stuff. Throw some darts, peruse the jukebox, enjoy the beer garden, and chat up the friendly staff about anything Irish. Top Notch. Formerly Snuggles Pub...oh man, if these walls could talk!</p><p><span class=\"activities\">Activities</span>: rock, H.O.Y.H.I.M.S.F.Y., outdoor patio, pizza</p>"
+        }
+    ]
 }
